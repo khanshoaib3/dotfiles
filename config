@@ -173,17 +173,6 @@ bar {
   	}
 }
 
-# TitleBar customization
-for_window [all] title_window_icon none
-for_window [all] title_format "  <b>%title</b> <span foreground='grey'>(%class)</span>"
-client.focused          #0072BC #0000004D #FFFFFF #005B96   #005B96
-client.focused_inactive #0455A0 #03396C #FFFFFF #03396C   #03396C
-client.unfocused        #006AB0 #005B96 #888888 #005B96   #005B96
-client.urgent           #2F343A #B3CDE0 #000000 #B3CDE0   #B3CDE0
-client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
-
-
-
 # Set inner/outer gaps
 gaps inner 6
 gaps outer 3
