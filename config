@@ -161,7 +161,7 @@ bar {
 	position top
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	colors {
-	    background #03396CCC
+	    background #000000
 	    statusline #FFFFFF
 	    separator  #666666
 
@@ -196,8 +196,8 @@ bindsym $mod+shift+x exec ~/.config/i3/scripts/blur-lock
 exec_always feh --bg-scale /home/towk/.config/i3/wallpaper.jpg
 exec --no-startup-id dunst
 
-for_window [class="Xfce4-terminal"] border pixel 1
-
+# Disable window title bar
+for_window [class="^.*"] border pixel 1
 hide_edge_borders smart
 
 assign [class="steamwebhelper"] $ws5
