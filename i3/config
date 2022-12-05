@@ -193,6 +193,8 @@ assign [class="steamwebhelper"] $ws5
 assign [class="Steam"] $ws5
 assign [class="discord"] $ws3
 assign [class="spotify"] $ws6
+assign [class="Minecraft"] $ws9
+assign [class="jetbrains-idea-ce"] $ws10
 
 ##################################                  Volume control                      ##############################
 
@@ -236,3 +238,6 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 ##########################################################################################################################
+
+exec orca
+exec_always picom
