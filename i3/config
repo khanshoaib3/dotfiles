@@ -86,14 +86,14 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
-set $ws3 "3:"
+set $ws3 "3"
 set $ws4 "4"
-set $ws5 "5:"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10:"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -172,7 +172,7 @@ hide_edge_borders smart
 assign [class="steamwebhelper"] $ws5
 assign [class="Steam"] $ws5
 assign [class="discord"] $ws3
-assign [class="spotify"] $ws6
+assign [class="spotify"] $ws4
 assign [class="Minecraft"] $ws9
 assign [class="jetbrains-idea-ce"] $ws10
 
@@ -220,3 +220,4 @@ bindsym XF86AudioPrev exec playerctl previous
 ##########################################################################################################################
 
 exec picom
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
